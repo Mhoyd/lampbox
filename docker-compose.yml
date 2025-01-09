@@ -19,10 +19,10 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: myDB
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: 12345
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: raspberrypi
+      MYSQL_PASSWORD: 12345
     volumes:
       - ./scripts:/docker-entrypoint-initdb.d
     ports:
